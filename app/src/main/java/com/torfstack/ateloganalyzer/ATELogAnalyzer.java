@@ -52,6 +52,7 @@ public class ATELogAnalyzer implements Runnable {
 
         if (events.isEmpty()) {
             System.err.println("No valid test events found in the log file.");
+            return;
         }
 
         AnalysisResult result = Analysis.analyzeTestTimes(events);
@@ -66,7 +67,7 @@ public class ATELogAnalyzer implements Runnable {
             try {
                 serializer.serialize(result);
             } catch (Exception e) {
-                System.err.println(e.getMessage());
+                System.err.println("Error serializing test result: " + e.getMessage());
                 return;
             }
         }
