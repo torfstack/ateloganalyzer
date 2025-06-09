@@ -1,0 +1,1056 @@
+{
+  "statistics": {
+    "check connection": {
+      "count": 1000,
+      "totalMillis": 216883,
+      "avgMillis": 216,
+      "stdDevMillis": 826
+    },
+    "measure leakage current": {
+      "count": 1000,
+      "totalMillis": 234201,
+      "avgMillis": 234,
+      "stdDevMillis": 877
+    },
+    "test digital logic": {
+      "count": 1000,
+      "totalMillis": 267829,
+      "avgMillis": 267,
+      "stdDevMillis": 1054
+    },
+    "verify analog circuits": {
+      "count": 1000,
+      "totalMillis": 328616,
+      "avgMillis": 328,
+      "stdDevMillis": 1248
+    },
+    "calibrate sensors": {
+      "count": 1000,
+      "totalMillis": 314052,
+      "avgMillis": 314,
+      "stdDevMillis": 1208
+    },
+    "validate memory": {
+      "count": 1000,
+      "totalMillis": 303564,
+      "avgMillis": 303,
+      "stdDevMillis": 1186
+    },
+    "stress test": {
+      "count": 1000,
+      "totalMillis": 271974,
+      "avgMillis": 271,
+      "stdDevMillis": 1053
+    }
+  },
+  "anomalies": [
+    {
+      "testType": "check connection",
+      "deviceInfo": "device #55",
+      "durationMillis": 6929,
+      "averageMillis": 216,
+      "stdDevMillis": 826
+    },
+    {
+      "testType": "check connection",
+      "deviceInfo": "device #64",
+      "durationMillis": 6251,
+      "averageMillis": 216,
+      "stdDevMillis": 826
+    },
+    {
+      "testType": "check connection",
+      "deviceInfo": "device #141",
+      "durationMillis": 5166,
+      "averageMillis": 216,
+      "stdDevMillis": 826
+    },
+    {
+      "testType": "check connection",
+      "deviceInfo": "device #200",
+      "durationMillis": 8126,
+      "averageMillis": 216,
+      "stdDevMillis": 826
+    },
+    {
+      "testType": "check connection",
+      "deviceInfo": "device #286",
+      "durationMillis": 8152,
+      "averageMillis": 216,
+      "stdDevMillis": 826
+    },
+    {
+      "testType": "check connection",
+      "deviceInfo": "device #379",
+      "durationMillis": 7717,
+      "averageMillis": 216,
+      "stdDevMillis": 826
+    },
+    {
+      "testType": "check connection",
+      "deviceInfo": "device #402",
+      "durationMillis": 5061,
+      "averageMillis": 216,
+      "stdDevMillis": 826
+    },
+    {
+      "testType": "check connection",
+      "deviceInfo": "device #540",
+      "durationMillis": 7556,
+      "averageMillis": 216,
+      "stdDevMillis": 826
+    },
+    {
+      "testType": "check connection",
+      "deviceInfo": "device #587",
+      "durationMillis": 5410,
+      "averageMillis": 216,
+      "stdDevMillis": 826
+    },
+    {
+      "testType": "check connection",
+      "deviceInfo": "device #717",
+      "durationMillis": 7035,
+      "averageMillis": 216,
+      "stdDevMillis": 826
+    },
+    {
+      "testType": "check connection",
+      "deviceInfo": "device #783",
+      "durationMillis": 9687,
+      "averageMillis": 216,
+      "stdDevMillis": 826
+    },
+    {
+      "testType": "check connection",
+      "deviceInfo": "device #919",
+      "durationMillis": 8131,
+      "averageMillis": 216,
+      "stdDevMillis": 826
+    },
+    {
+      "testType": "check connection",
+      "deviceInfo": "device #971",
+      "durationMillis": 9260,
+      "averageMillis": 216,
+      "stdDevMillis": 826
+    },
+    {
+      "testType": "measure leakage current",
+      "deviceInfo": "device #37",
+      "durationMillis": 8214,
+      "averageMillis": 234,
+      "stdDevMillis": 877
+    },
+    {
+      "testType": "measure leakage current",
+      "deviceInfo": "device #88",
+      "durationMillis": 7107,
+      "averageMillis": 234,
+      "stdDevMillis": 877
+    },
+    {
+      "testType": "measure leakage current",
+      "deviceInfo": "device #241",
+      "durationMillis": 5348,
+      "averageMillis": 234,
+      "stdDevMillis": 877
+    },
+    {
+      "testType": "measure leakage current",
+      "deviceInfo": "device #354",
+      "durationMillis": 5191,
+      "averageMillis": 234,
+      "stdDevMillis": 877
+    },
+    {
+      "testType": "measure leakage current",
+      "deviceInfo": "device #363",
+      "durationMillis": 8384,
+      "averageMillis": 234,
+      "stdDevMillis": 877
+    },
+    {
+      "testType": "measure leakage current",
+      "deviceInfo": "device #377",
+      "durationMillis": 6744,
+      "averageMillis": 234,
+      "stdDevMillis": 877
+    },
+    {
+      "testType": "measure leakage current",
+      "deviceInfo": "device #399",
+      "durationMillis": 7973,
+      "averageMillis": 234,
+      "stdDevMillis": 877
+    },
+    {
+      "testType": "measure leakage current",
+      "deviceInfo": "device #403",
+      "durationMillis": 6008,
+      "averageMillis": 234,
+      "stdDevMillis": 877
+    },
+    {
+      "testType": "measure leakage current",
+      "deviceInfo": "device #449",
+      "durationMillis": 6311,
+      "averageMillis": 234,
+      "stdDevMillis": 877
+    },
+    {
+      "testType": "measure leakage current",
+      "deviceInfo": "device #590",
+      "durationMillis": 5999,
+      "averageMillis": 234,
+      "stdDevMillis": 877
+    },
+    {
+      "testType": "measure leakage current",
+      "deviceInfo": "device #710",
+      "durationMillis": 7890,
+      "averageMillis": 234,
+      "stdDevMillis": 877
+    },
+    {
+      "testType": "measure leakage current",
+      "deviceInfo": "device #721",
+      "durationMillis": 9326,
+      "averageMillis": 234,
+      "stdDevMillis": 877
+    },
+    {
+      "testType": "measure leakage current",
+      "deviceInfo": "device #862",
+      "durationMillis": 9298,
+      "averageMillis": 234,
+      "stdDevMillis": 877
+    },
+    {
+      "testType": "measure leakage current",
+      "deviceInfo": "device #899",
+      "durationMillis": 5248,
+      "averageMillis": 234,
+      "stdDevMillis": 877
+    },
+    {
+      "testType": "measure leakage current",
+      "deviceInfo": "device #901",
+      "durationMillis": 6686,
+      "averageMillis": 234,
+      "stdDevMillis": 877
+    },
+    {
+      "testType": "measure leakage current",
+      "deviceInfo": "device #904",
+      "durationMillis": 5885,
+      "averageMillis": 234,
+      "stdDevMillis": 877
+    },
+    {
+      "testType": "test digital logic",
+      "deviceInfo": "device #40",
+      "durationMillis": 8354,
+      "averageMillis": 267,
+      "stdDevMillis": 1054
+    },
+    {
+      "testType": "test digital logic",
+      "deviceInfo": "device #119",
+      "durationMillis": 7981,
+      "averageMillis": 267,
+      "stdDevMillis": 1054
+    },
+    {
+      "testType": "test digital logic",
+      "deviceInfo": "device #134",
+      "durationMillis": 5618,
+      "averageMillis": 267,
+      "stdDevMillis": 1054
+    },
+    {
+      "testType": "test digital logic",
+      "deviceInfo": "device #135",
+      "durationMillis": 7650,
+      "averageMillis": 267,
+      "stdDevMillis": 1054
+    },
+    {
+      "testType": "test digital logic",
+      "deviceInfo": "device #136",
+      "durationMillis": 9295,
+      "averageMillis": 267,
+      "stdDevMillis": 1054
+    },
+    {
+      "testType": "test digital logic",
+      "deviceInfo": "device #231",
+      "durationMillis": 7096,
+      "averageMillis": 267,
+      "stdDevMillis": 1054
+    },
+    {
+      "testType": "test digital logic",
+      "deviceInfo": "device #254",
+      "durationMillis": 6876,
+      "averageMillis": 267,
+      "stdDevMillis": 1054
+    },
+    {
+      "testType": "test digital logic",
+      "deviceInfo": "device #306",
+      "durationMillis": 9507,
+      "averageMillis": 267,
+      "stdDevMillis": 1054
+    },
+    {
+      "testType": "test digital logic",
+      "deviceInfo": "device #362",
+      "durationMillis": 8956,
+      "averageMillis": 267,
+      "stdDevMillis": 1054
+    },
+    {
+      "testType": "test digital logic",
+      "deviceInfo": "device #374",
+      "durationMillis": 9679,
+      "averageMillis": 267,
+      "stdDevMillis": 1054
+    },
+    {
+      "testType": "test digital logic",
+      "deviceInfo": "device #385",
+      "durationMillis": 7646,
+      "averageMillis": 267,
+      "stdDevMillis": 1054
+    },
+    {
+      "testType": "test digital logic",
+      "deviceInfo": "device #436",
+      "durationMillis": 5855,
+      "averageMillis": 267,
+      "stdDevMillis": 1054
+    },
+    {
+      "testType": "test digital logic",
+      "deviceInfo": "device #477",
+      "durationMillis": 7570,
+      "averageMillis": 267,
+      "stdDevMillis": 1054
+    },
+    {
+      "testType": "test digital logic",
+      "deviceInfo": "device #611",
+      "durationMillis": 8962,
+      "averageMillis": 267,
+      "stdDevMillis": 1054
+    },
+    {
+      "testType": "test digital logic",
+      "deviceInfo": "device #627",
+      "durationMillis": 8277,
+      "averageMillis": 267,
+      "stdDevMillis": 1054
+    },
+    {
+      "testType": "test digital logic",
+      "deviceInfo": "device #728",
+      "durationMillis": 5400,
+      "averageMillis": 267,
+      "stdDevMillis": 1054
+    },
+    {
+      "testType": "test digital logic",
+      "deviceInfo": "device #788",
+      "durationMillis": 7721,
+      "averageMillis": 267,
+      "stdDevMillis": 1054
+    },
+    {
+      "testType": "test digital logic",
+      "deviceInfo": "device #913",
+      "durationMillis": 8557,
+      "averageMillis": 267,
+      "stdDevMillis": 1054
+    },
+    {
+      "testType": "test digital logic",
+      "deviceInfo": "device #935",
+      "durationMillis": 5910,
+      "averageMillis": 267,
+      "stdDevMillis": 1054
+    },
+    {
+      "testType": "verify analog circuits",
+      "deviceInfo": "device #10",
+      "durationMillis": 6821,
+      "averageMillis": 328,
+      "stdDevMillis": 1248
+    },
+    {
+      "testType": "verify analog circuits",
+      "deviceInfo": "device #24",
+      "durationMillis": 8669,
+      "averageMillis": 328,
+      "stdDevMillis": 1248
+    },
+    {
+      "testType": "verify analog circuits",
+      "deviceInfo": "device #71",
+      "durationMillis": 6431,
+      "averageMillis": 328,
+      "stdDevMillis": 1248
+    },
+    {
+      "testType": "verify analog circuits",
+      "deviceInfo": "device #93",
+      "durationMillis": 7847,
+      "averageMillis": 328,
+      "stdDevMillis": 1248
+    },
+    {
+      "testType": "verify analog circuits",
+      "deviceInfo": "device #110",
+      "durationMillis": 8313,
+      "averageMillis": 328,
+      "stdDevMillis": 1248
+    },
+    {
+      "testType": "verify analog circuits",
+      "deviceInfo": "device #122",
+      "durationMillis": 9656,
+      "averageMillis": 328,
+      "stdDevMillis": 1248
+    },
+    {
+      "testType": "verify analog circuits",
+      "deviceInfo": "device #203",
+      "durationMillis": 8693,
+      "averageMillis": 328,
+      "stdDevMillis": 1248
+    },
+    {
+      "testType": "verify analog circuits",
+      "deviceInfo": "device #287",
+      "durationMillis": 7353,
+      "averageMillis": 328,
+      "stdDevMillis": 1248
+    },
+    {
+      "testType": "verify analog circuits",
+      "deviceInfo": "device #339",
+      "durationMillis": 8790,
+      "averageMillis": 328,
+      "stdDevMillis": 1248
+    },
+    {
+      "testType": "verify analog circuits",
+      "deviceInfo": "device #342",
+      "durationMillis": 8688,
+      "averageMillis": 328,
+      "stdDevMillis": 1248
+    },
+    {
+      "testType": "verify analog circuits",
+      "deviceInfo": "device #439",
+      "durationMillis": 7407,
+      "averageMillis": 328,
+      "stdDevMillis": 1248
+    },
+    {
+      "testType": "verify analog circuits",
+      "deviceInfo": "device #470",
+      "durationMillis": 7955,
+      "averageMillis": 328,
+      "stdDevMillis": 1248
+    },
+    {
+      "testType": "verify analog circuits",
+      "deviceInfo": "device #482",
+      "durationMillis": 7404,
+      "averageMillis": 328,
+      "stdDevMillis": 1248
+    },
+    {
+      "testType": "verify analog circuits",
+      "deviceInfo": "device #539",
+      "durationMillis": 9576,
+      "averageMillis": 328,
+      "stdDevMillis": 1248
+    },
+    {
+      "testType": "verify analog circuits",
+      "deviceInfo": "device #547",
+      "durationMillis": 5939,
+      "averageMillis": 328,
+      "stdDevMillis": 1248
+    },
+    {
+      "testType": "verify analog circuits",
+      "deviceInfo": "device #551",
+      "durationMillis": 7021,
+      "averageMillis": 328,
+      "stdDevMillis": 1248
+    },
+    {
+      "testType": "verify analog circuits",
+      "deviceInfo": "device #582",
+      "durationMillis": 7275,
+      "averageMillis": 328,
+      "stdDevMillis": 1248
+    },
+    {
+      "testType": "verify analog circuits",
+      "deviceInfo": "device #607",
+      "durationMillis": 8180,
+      "averageMillis": 328,
+      "stdDevMillis": 1248
+    },
+    {
+      "testType": "verify analog circuits",
+      "deviceInfo": "device #633",
+      "durationMillis": 5698,
+      "averageMillis": 328,
+      "stdDevMillis": 1248
+    },
+    {
+      "testType": "verify analog circuits",
+      "deviceInfo": "device #745",
+      "durationMillis": 9345,
+      "averageMillis": 328,
+      "stdDevMillis": 1248
+    },
+    {
+      "testType": "verify analog circuits",
+      "deviceInfo": "device #751",
+      "durationMillis": 8588,
+      "averageMillis": 328,
+      "stdDevMillis": 1248
+    },
+    {
+      "testType": "verify analog circuits",
+      "deviceInfo": "device #770",
+      "durationMillis": 7133,
+      "averageMillis": 328,
+      "stdDevMillis": 1248
+    },
+    {
+      "testType": "verify analog circuits",
+      "deviceInfo": "device #824",
+      "durationMillis": 5014,
+      "averageMillis": 328,
+      "stdDevMillis": 1248
+    },
+    {
+      "testType": "verify analog circuits",
+      "deviceInfo": "device #829",
+      "durationMillis": 8320,
+      "averageMillis": 328,
+      "stdDevMillis": 1248
+    },
+    {
+      "testType": "verify analog circuits",
+      "deviceInfo": "device #864",
+      "durationMillis": 9453,
+      "averageMillis": 328,
+      "stdDevMillis": 1248
+    },
+    {
+      "testType": "verify analog circuits",
+      "deviceInfo": "device #952",
+      "durationMillis": 6490,
+      "averageMillis": 328,
+      "stdDevMillis": 1248
+    },
+    {
+      "testType": "verify analog circuits",
+      "deviceInfo": "device #975",
+      "durationMillis": 6465,
+      "averageMillis": 328,
+      "stdDevMillis": 1248
+    },
+    {
+      "testType": "calibrate sensors",
+      "deviceInfo": "device #11",
+      "durationMillis": 6925,
+      "averageMillis": 314,
+      "stdDevMillis": 1208
+    },
+    {
+      "testType": "calibrate sensors",
+      "deviceInfo": "device #51",
+      "durationMillis": 8685,
+      "averageMillis": 314,
+      "stdDevMillis": 1208
+    },
+    {
+      "testType": "calibrate sensors",
+      "deviceInfo": "device #75",
+      "durationMillis": 8615,
+      "averageMillis": 314,
+      "stdDevMillis": 1208
+    },
+    {
+      "testType": "calibrate sensors",
+      "deviceInfo": "device #110",
+      "durationMillis": 7468,
+      "averageMillis": 314,
+      "stdDevMillis": 1208
+    },
+    {
+      "testType": "calibrate sensors",
+      "deviceInfo": "device #118",
+      "durationMillis": 9378,
+      "averageMillis": 314,
+      "stdDevMillis": 1208
+    },
+    {
+      "testType": "calibrate sensors",
+      "deviceInfo": "device #160",
+      "durationMillis": 5611,
+      "averageMillis": 314,
+      "stdDevMillis": 1208
+    },
+    {
+      "testType": "calibrate sensors",
+      "deviceInfo": "device #185",
+      "durationMillis": 7731,
+      "averageMillis": 314,
+      "stdDevMillis": 1208
+    },
+    {
+      "testType": "calibrate sensors",
+      "deviceInfo": "device #203",
+      "durationMillis": 7402,
+      "averageMillis": 314,
+      "stdDevMillis": 1208
+    },
+    {
+      "testType": "calibrate sensors",
+      "deviceInfo": "device #250",
+      "durationMillis": 5169,
+      "averageMillis": 314,
+      "stdDevMillis": 1208
+    },
+    {
+      "testType": "calibrate sensors",
+      "deviceInfo": "device #385",
+      "durationMillis": 7569,
+      "averageMillis": 314,
+      "stdDevMillis": 1208
+    },
+    {
+      "testType": "calibrate sensors",
+      "deviceInfo": "device #449",
+      "durationMillis": 8146,
+      "averageMillis": 314,
+      "stdDevMillis": 1208
+    },
+    {
+      "testType": "calibrate sensors",
+      "deviceInfo": "device #470",
+      "durationMillis": 5530,
+      "averageMillis": 314,
+      "stdDevMillis": 1208
+    },
+    {
+      "testType": "calibrate sensors",
+      "deviceInfo": "device #551",
+      "durationMillis": 8635,
+      "averageMillis": 314,
+      "stdDevMillis": 1208
+    },
+    {
+      "testType": "calibrate sensors",
+      "deviceInfo": "device #591",
+      "durationMillis": 6857,
+      "averageMillis": 314,
+      "stdDevMillis": 1208
+    },
+    {
+      "testType": "calibrate sensors",
+      "deviceInfo": "device #626",
+      "durationMillis": 7153,
+      "averageMillis": 314,
+      "stdDevMillis": 1208
+    },
+    {
+      "testType": "calibrate sensors",
+      "deviceInfo": "device #689",
+      "durationMillis": 9285,
+      "averageMillis": 314,
+      "stdDevMillis": 1208
+    },
+    {
+      "testType": "calibrate sensors",
+      "deviceInfo": "device #742",
+      "durationMillis": 8726,
+      "averageMillis": 314,
+      "stdDevMillis": 1208
+    },
+    {
+      "testType": "calibrate sensors",
+      "deviceInfo": "device #807",
+      "durationMillis": 9605,
+      "averageMillis": 314,
+      "stdDevMillis": 1208
+    },
+    {
+      "testType": "calibrate sensors",
+      "deviceInfo": "device #811",
+      "durationMillis": 9548,
+      "averageMillis": 314,
+      "stdDevMillis": 1208
+    },
+    {
+      "testType": "calibrate sensors",
+      "deviceInfo": "device #869",
+      "durationMillis": 9118,
+      "averageMillis": 314,
+      "stdDevMillis": 1208
+    },
+    {
+      "testType": "calibrate sensors",
+      "deviceInfo": "device #872",
+      "durationMillis": 5190,
+      "averageMillis": 314,
+      "stdDevMillis": 1208
+    },
+    {
+      "testType": "calibrate sensors",
+      "deviceInfo": "device #880",
+      "durationMillis": 9283,
+      "averageMillis": 314,
+      "stdDevMillis": 1208
+    },
+    {
+      "testType": "calibrate sensors",
+      "deviceInfo": "device #895",
+      "durationMillis": 5828,
+      "averageMillis": 314,
+      "stdDevMillis": 1208
+    },
+    {
+      "testType": "calibrate sensors",
+      "deviceInfo": "device #904",
+      "durationMillis": 7209,
+      "averageMillis": 314,
+      "stdDevMillis": 1208
+    },
+    {
+      "testType": "calibrate sensors",
+      "deviceInfo": "device #969",
+      "durationMillis": 8613,
+      "averageMillis": 314,
+      "stdDevMillis": 1208
+    },
+    {
+      "testType": "validate memory",
+      "deviceInfo": "device #3",
+      "durationMillis": 8594,
+      "averageMillis": 303,
+      "stdDevMillis": 1186
+    },
+    {
+      "testType": "validate memory",
+      "deviceInfo": "device #11",
+      "durationMillis": 6662,
+      "averageMillis": 303,
+      "stdDevMillis": 1186
+    },
+    {
+      "testType": "validate memory",
+      "deviceInfo": "device #91",
+      "durationMillis": 8370,
+      "averageMillis": 303,
+      "stdDevMillis": 1186
+    },
+    {
+      "testType": "validate memory",
+      "deviceInfo": "device #118",
+      "durationMillis": 8905,
+      "averageMillis": 303,
+      "stdDevMillis": 1186
+    },
+    {
+      "testType": "validate memory",
+      "deviceInfo": "device #200",
+      "durationMillis": 5587,
+      "averageMillis": 303,
+      "stdDevMillis": 1186
+    },
+    {
+      "testType": "validate memory",
+      "deviceInfo": "device #272",
+      "durationMillis": 9842,
+      "averageMillis": 303,
+      "stdDevMillis": 1186
+    },
+    {
+      "testType": "validate memory",
+      "deviceInfo": "device #356",
+      "durationMillis": 8381,
+      "averageMillis": 303,
+      "stdDevMillis": 1186
+    },
+    {
+      "testType": "validate memory",
+      "deviceInfo": "device #390",
+      "durationMillis": 9549,
+      "averageMillis": 303,
+      "stdDevMillis": 1186
+    },
+    {
+      "testType": "validate memory",
+      "deviceInfo": "device #404",
+      "durationMillis": 7390,
+      "averageMillis": 303,
+      "stdDevMillis": 1186
+    },
+    {
+      "testType": "validate memory",
+      "deviceInfo": "device #416",
+      "durationMillis": 8313,
+      "averageMillis": 303,
+      "stdDevMillis": 1186
+    },
+    {
+      "testType": "validate memory",
+      "deviceInfo": "device #464",
+      "durationMillis": 6584,
+      "averageMillis": 303,
+      "stdDevMillis": 1186
+    },
+    {
+      "testType": "validate memory",
+      "deviceInfo": "device #538",
+      "durationMillis": 7119,
+      "averageMillis": 303,
+      "stdDevMillis": 1186
+    },
+    {
+      "testType": "validate memory",
+      "deviceInfo": "device #543",
+      "durationMillis": 8431,
+      "averageMillis": 303,
+      "stdDevMillis": 1186
+    },
+    {
+      "testType": "validate memory",
+      "deviceInfo": "device #613",
+      "durationMillis": 8946,
+      "averageMillis": 303,
+      "stdDevMillis": 1186
+    },
+    {
+      "testType": "validate memory",
+      "deviceInfo": "device #758",
+      "durationMillis": 8305,
+      "averageMillis": 303,
+      "stdDevMillis": 1186
+    },
+    {
+      "testType": "validate memory",
+      "deviceInfo": "device #760",
+      "durationMillis": 8683,
+      "averageMillis": 303,
+      "stdDevMillis": 1186
+    },
+    {
+      "testType": "validate memory",
+      "deviceInfo": "device #841",
+      "durationMillis": 7863,
+      "averageMillis": 303,
+      "stdDevMillis": 1186
+    },
+    {
+      "testType": "validate memory",
+      "deviceInfo": "device #937",
+      "durationMillis": 5232,
+      "averageMillis": 303,
+      "stdDevMillis": 1186
+    },
+    {
+      "testType": "validate memory",
+      "deviceInfo": "device #955",
+      "durationMillis": 8137,
+      "averageMillis": 303,
+      "stdDevMillis": 1186
+    },
+    {
+      "testType": "validate memory",
+      "deviceInfo": "device #958",
+      "durationMillis": 6495,
+      "averageMillis": 303,
+      "stdDevMillis": 1186
+    },
+    {
+      "testType": "validate memory",
+      "deviceInfo": "device #965",
+      "durationMillis": 7190,
+      "averageMillis": 303,
+      "stdDevMillis": 1186
+    },
+    {
+      "testType": "validate memory",
+      "deviceInfo": "device #970",
+      "durationMillis": 9202,
+      "averageMillis": 303,
+      "stdDevMillis": 1186
+    },
+    {
+      "testType": "validate memory",
+      "deviceInfo": "device #999",
+      "durationMillis": 8883,
+      "averageMillis": 303,
+      "stdDevMillis": 1186
+    },
+    {
+      "testType": "stress test",
+      "deviceInfo": "device #14",
+      "durationMillis": 9546,
+      "averageMillis": 271,
+      "stdDevMillis": 1053
+    },
+    {
+      "testType": "stress test",
+      "deviceInfo": "device #43",
+      "durationMillis": 5915,
+      "averageMillis": 271,
+      "stdDevMillis": 1053
+    },
+    {
+      "testType": "stress test",
+      "deviceInfo": "device #165",
+      "durationMillis": 8155,
+      "averageMillis": 271,
+      "stdDevMillis": 1053
+    },
+    {
+      "testType": "stress test",
+      "deviceInfo": "device #267",
+      "durationMillis": 5721,
+      "averageMillis": 271,
+      "stdDevMillis": 1053
+    },
+    {
+      "testType": "stress test",
+      "deviceInfo": "device #318",
+      "durationMillis": 9718,
+      "averageMillis": 271,
+      "stdDevMillis": 1053
+    },
+    {
+      "testType": "stress test",
+      "deviceInfo": "device #335",
+      "durationMillis": 5126,
+      "averageMillis": 271,
+      "stdDevMillis": 1053
+    },
+    {
+      "testType": "stress test",
+      "deviceInfo": "device #345",
+      "durationMillis": 9759,
+      "averageMillis": 271,
+      "stdDevMillis": 1053
+    },
+    {
+      "testType": "stress test",
+      "deviceInfo": "device #444",
+      "durationMillis": 6117,
+      "averageMillis": 271,
+      "stdDevMillis": 1053
+    },
+    {
+      "testType": "stress test",
+      "deviceInfo": "device #511",
+      "durationMillis": 6081,
+      "averageMillis": 271,
+      "stdDevMillis": 1053
+    },
+    {
+      "testType": "stress test",
+      "deviceInfo": "device #539",
+      "durationMillis": 5452,
+      "averageMillis": 271,
+      "stdDevMillis": 1053
+    },
+    {
+      "testType": "stress test",
+      "deviceInfo": "device #588",
+      "durationMillis": 7618,
+      "averageMillis": 271,
+      "stdDevMillis": 1053
+    },
+    {
+      "testType": "stress test",
+      "deviceInfo": "device #656",
+      "durationMillis": 8468,
+      "averageMillis": 271,
+      "stdDevMillis": 1053
+    },
+    {
+      "testType": "stress test",
+      "deviceInfo": "device #698",
+      "durationMillis": 8313,
+      "averageMillis": 271,
+      "stdDevMillis": 1053
+    },
+    {
+      "testType": "stress test",
+      "deviceInfo": "device #731",
+      "durationMillis": 5570,
+      "averageMillis": 271,
+      "stdDevMillis": 1053
+    },
+    {
+      "testType": "stress test",
+      "deviceInfo": "device #753",
+      "durationMillis": 5441,
+      "averageMillis": 271,
+      "stdDevMillis": 1053
+    },
+    {
+      "testType": "stress test",
+      "deviceInfo": "device #758",
+      "durationMillis": 8920,
+      "averageMillis": 271,
+      "stdDevMillis": 1053
+    },
+    {
+      "testType": "stress test",
+      "deviceInfo": "device #838",
+      "durationMillis": 9126,
+      "averageMillis": 271,
+      "stdDevMillis": 1053
+    },
+    {
+      "testType": "stress test",
+      "deviceInfo": "device #881",
+      "durationMillis": 9332,
+      "averageMillis": 271,
+      "stdDevMillis": 1053
+    },
+    {
+      "testType": "stress test",
+      "deviceInfo": "device #893",
+      "durationMillis": 5005,
+      "averageMillis": 271,
+      "stdDevMillis": 1053
+    },
+    {
+      "testType": "stress test",
+      "deviceInfo": "device #949",
+      "durationMillis": 5653,
+      "averageMillis": 271,
+      "stdDevMillis": 1053
+    },
+    {
+      "testType": "stress test",
+      "deviceInfo": "device #983",
+      "durationMillis": 7491,
+      "averageMillis": 271,
+      "stdDevMillis": 1053
+    }
+  ]
+}
