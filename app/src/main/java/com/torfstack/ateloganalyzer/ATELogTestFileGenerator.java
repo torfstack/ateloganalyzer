@@ -64,7 +64,7 @@ public class ATELogTestFileGenerator {
 
             // Random duration with occasional long delays
             long duration;
-            if (random.nextInt(100) < 2) { // 5% chance long delay in subtest
+            if (random.nextInt(100) < 2) { // 2% chance long delay in subtest
                 duration = 5000 + random.nextInt(5000); // Long delay (5-10s)
             } else {
                 duration = 50 + random.nextInt(150); // Normal delay (50-200ms)
