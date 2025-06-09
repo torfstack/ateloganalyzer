@@ -50,6 +50,7 @@ tasks.register<JavaExec>("logGenerator") {
 application {
     // Define the main class for the application.
     mainClass = "com.torfstack.ateloganalyzer.ATELogAnalyzer"
+    applicationName = "atelog-analyzer"
 }
 
 tasks.named<Test>("test") {
