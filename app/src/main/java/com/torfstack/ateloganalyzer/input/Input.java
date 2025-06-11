@@ -27,8 +27,7 @@ public class Input {
         String currentSubtest = "Unknown Subtest";
         LocalTime currentBeginTimestamp = null;
 
-        void clear() {
-            currentDevice = "Unknown Device";
+        void clearSubtest() {
             currentSubtest = "Unknown Subtest";
             currentBeginTimestamp = null;
         }
@@ -45,7 +44,7 @@ public class Input {
         try (Stream<String> lines = Files.lines(Paths.get(filename))) {
             lines.forEach(line -> {
                 Matcher deviceMatcher = DEVICE_PATTERN.matcher(line);
-                String currentDevice = deviceMatcher.find() ? deviceMatcher.group(1) : context.currentDevice;
+                context.currentDevice = deviceMatcher.find() ? deviceMatcher.group(1) : context.currentDevice;
 
                 Matcher subtestMatcher = SUBTEST_NAME_PATTERN.matcher(line);
                 String currentSubtest = subtestMatcher.find() ? subtestMatcher.group(1) : context.currentSubtest;
@@ -64,7 +63,6 @@ public class Input {
                         return; // Skip this event if a subtest is already active
                     }
                     context.currentBeginTimestamp = timestamp;
-                    context.currentDevice = currentDevice;
                     context.currentSubtest = currentSubtest;
                 } else if (isEndSubtest) {
                     if (context.currentBeginTimestamp == null) {
@@ -75,7 +73,7 @@ public class Input {
                             Duration.between(context.currentBeginTimestamp, timestamp),
                             context.currentSubtest, context.currentDevice);
                     events.add(event);
-                    context.clear();
+                    context.clearSubtest();
                 }
             });
         }

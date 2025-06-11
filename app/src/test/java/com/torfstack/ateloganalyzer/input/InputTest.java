@@ -50,6 +50,14 @@ class InputTest {
         // Assert
         assertNotNull(events);
         assertEquals(4, events.size());
+        assertEquals("device #13", events.get(0).deviceInfo());
+        assertEquals("check connection", events.get(0).eventType());
+        assertEquals("device #13", events.get(1).deviceInfo());
+        assertEquals("measure leakage current", events.get(1).eventType());
+        assertEquals("device #14", events.get(2).deviceInfo());
+        assertEquals("check connection", events.get(2).eventType());
+        assertEquals("device #14", events.get(3).deviceInfo());
+        assertEquals("measure leakage current", events.get(3).eventType());
     }
 
     @Test
