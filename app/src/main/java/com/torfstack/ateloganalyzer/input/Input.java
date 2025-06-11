@@ -26,6 +26,16 @@ public class Input {
         String currentDevice = "Unknown Device";
         String currentSubtest = "Unknown Subtest";
         LocalTime currentBeginTimestamp = null;
+
+        void clear() {
+            currentDevice = "Unknown Device";
+            currentSubtest = "Unknown Subtest";
+            currentBeginTimestamp = null;
+        }
+
+        boolean isSubtestActive() {
+            return currentBeginTimestamp != null || !currentSubtest.equals("Unknown Subtest");
+        }
     }
 
     public static @NonNull List<TestEvent> parseLogFile(@NonNull String filename) throws IOException {
@@ -35,10 +45,10 @@ public class Input {
         try (Stream<String> lines = Files.lines(Paths.get(filename))) {
             lines.forEach(line -> {
                 Matcher deviceMatcher = DEVICE_PATTERN.matcher(line);
-                context.currentDevice = deviceMatcher.find() ? deviceMatcher.group(1) : context.currentDevice;
+                String currentDevice = deviceMatcher.find() ? deviceMatcher.group(1) : context.currentDevice;
 
                 Matcher subtestMatcher = SUBTEST_NAME_PATTERN.matcher(line);
-                context.currentSubtest = subtestMatcher.find() ? subtestMatcher.group(1) : context.currentSubtest;
+                String currentSubtest = subtestMatcher.find() ? subtestMatcher.group(1) : context.currentSubtest;
 
                 Matcher timestampMatcher = TIMESTAMP_PATTERN.matcher(line);
                 String timestampString = timestampMatcher.find() ? timestampMatcher.group(1) : null;
@@ -49,12 +59,23 @@ public class Input {
                 boolean isEndSubtest = line.contains("END DEVICE_TEST.SUBTEST");
 
                 if (isBeginSubtest) {
+                    if (context.isSubtestActive()) {
+                        System.err.println("Warning: BEGIN DEVICE_TEST.SUBTEST without matching END at " + timestamp);
+                        return; // Skip this event if a subtest is already active
+                    }
                     context.currentBeginTimestamp = timestamp;
+                    context.currentDevice = currentDevice;
+                    context.currentSubtest = currentSubtest;
                 } else if (isEndSubtest) {
+                    if (context.currentBeginTimestamp == null) {
+                        System.err.println("Warning: END DEVICE_TEST.SUBTEST without matching BEGIN at " + timestamp);
+                        return; // Skip this event if no begin timestamp is set
+                    }
                     TestEvent event = new TestEvent(context.currentBeginTimestamp, timestamp,
                             Duration.between(context.currentBeginTimestamp, timestamp),
                             context.currentSubtest, context.currentDevice);
                     events.add(event);
+                    context.clear();
                 }
             });
         }

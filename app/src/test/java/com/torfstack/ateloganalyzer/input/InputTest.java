@@ -86,4 +86,39 @@ class InputTest {
         assertNotNull(events);
         assertTrue(events.isEmpty());
     }
+
+    @Test
+    void parseLogFile_EndSubtestWithoutBegin_SkipsEvent() throws Exception {
+        // Arrange
+        Path logFile = tempDir.resolve("endWithoutBegin.log");
+        Files.writeString(logFile, """
+        #PE[14:35:01.600] : END DEVICE_TEST.SUBTEST
+        """);
+
+        // Act
+        List<TestEvent> events = Input.parseLogFile(logFile.toString());
+
+        // Assert
+        assertNotNull(events);
+        assertTrue(events.isEmpty());
+    }
+
+    @Test
+    void parseLogFile_BeginSubtestWhileActive_SkipsEvent() throws Exception {
+        // Arrange
+        Path logFile = tempDir.resolve("beginWhileActive.log");
+        Files.writeString(logFile, """
+        #PE[14:35:01.300] : BEGIN DEVICE_TEST.SUBTEST "check connection"
+        #PE[14:35:01.400] : BEGIN DEVICE_TEST.SUBTEST "measure leakage current"
+        #PE[14:35:01.600] : END DEVICE_TEST.SUBTEST
+        """);
+
+        // Act
+        List<TestEvent> events = Input.parseLogFile(logFile.toString());
+
+        // Assert
+        assertNotNull(events);
+        assertEquals(1, events.size());
+        assertEquals("check connection", events.get(0).eventType());
+    }
 }
